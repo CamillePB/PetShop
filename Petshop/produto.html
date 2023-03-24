@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <title>
+        Seu Produto
+  </title>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/Petshop/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery-3.2.1.min.js"></script>
+            
+    <style>
+        .conteiner2{
+            display: relative;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 2%;
+           width: 80%;
+           padding-bottom: 20px;
+        }
+        
+        .frete{
+            padding-left: 10px;
+            padding-right: 10px;
+            
+            background-color: green;
+            color:white
+        }
+        .buy button{
+            width:60%;
+            background:darkblue;
+            color:white
+        }
+        .buy h1{
+            color:green
+        }
+        .produto h5{
+            color:rgb(150, 75, 54);
+        }
+        .img2{
+            border:2px solid black;
+        }
+
+        .threm{
+            width: 35%;
+            margin-left: 0%;
+        }
+
+        h6{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .ti-c{
+            color:rgb(29, 22, 61);
+        }
+
+.botan{
+    border-radius: 10px; 
+    height: 34px; 
+    padding-top:3px; 
+    margin-top: 20px;
+
+}
+
+    </style>
+      
+</head>
+<body>
+     
+    <nav class="navbar nav-brown">
+        <div class="container" style="width: 100%; margin-left: 0%">
+          <div class="row">
+         <div class="col-sm-4">
+          <form class="form-inline margin-b" style="margin-left: 0%;">
+             <div>
+               <i><img src="/img telas/search icon.png" alt="Pesquisa"></i>
+            </div>
+    
+          <div>
+           <input class="form-control" type="search" aria-label="Pesquisar" style="height: 30px; border-radius: 12px; width: 100%;">
+        </div>
+      </form> 
+    </div>
+        
+        <div class="col-sm-6" style="margin-left: 0%;">
+         
+          <a href="index.html" style="margin-left: 90%;"><img width="60%" src="/img telas/Titulo.png" alt="Logo"></a>
+        </div>
+    
+        <div class="col-sm-2">
+          <div>
+        <div class="container" style="width: 100%; margin-left: 470%; margin-right: 0%;">
+              <div class="row">
+              <div class="col-sm-6"> 
+                    <a style="margin-left: 910%;" href="login.html"><img src="/img telas/person icon.png" alt="Login"></a>
+         </div>
+    
+              <div class="col-sm-6">
+                
+                    <a class="border-left border-1" style="margin-left: 850%; padding: 7px; padding-top: 0px;" href="carrinho.html"><img src="/img telas/shop icon.png" alt="Carrinho"></a>
+             </div>
+            </div>
+             
+        </div>
+      </div>
+      </div>
+    </div> 
+    </div>
+    
+        </div>
+    </nav>
+    
+<!--Ao clicar em um produto no index.html, o usuario é direcionado a pagina do produto-->
+<!--cada produto possui cod de identificação diferente-->
+        <div class="conteiner2 row border-bottom" >
+            <img class="shadow  rounded img2"src="https://resize.hswstatic.com/w_1024/gif/crack-cocaine-10.jpg" alt="img" width="300px">
+            <div class="produto col">
+                <h1 class="titulo ti-c" id="ProdName">Crack em lata</h1>
+                <h5 class="distribuidora" id="DistriName">Biqueira da esquina</h5>
+                <p class="descricao" id="Descri">Crack é a cocaína solidificada em cristais. O nome deriva do ruído peculiar que se produz, quando o cristal de cocaína é aquecido.</p>
+            </div>
+            <div class="buy col">
+                <h1>R$<span id="Prodpreco">3000,00</span></h1>
+                
+                  <h6><span class="border badge badge-pill badge-co threm"  id="Frete1">Frete Gratis</span>  49x sem juros</h6>
+              <a href="login.html"><button class="btn back-brown-dark border-rounded botan" type="submit" style="color: rgb(255, 255, 255); background-color: rgb(50, 38, 102)">
+                Comprar</button></a> 
+                <!--Se o usuarío já estava logado, entrar diretamente na pagina carrinho.html-->
+                <!--Ao clicar em comprar, o produto deverá ser adicionado no carrinho-->
+            </div>
+        </div>
+        <br>
+        <div  style="width: 80%; margin-left: 12%;">
+        <table class="form-table">
+            <thead class="form-table-in" style="background-color: white;">
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+      
+            
+                </tr>
+              </thead>
+              <thead class="form-thead">
+                  <tr>
+                        <td scope="col" class="tamanho-2"></td>
+                        
+                          <td scope="col" class="tamanho-20">
+                               <a href="carrinho.html">    
+                                     <div class="img">
+                                    <img src="/img telas/coleira img.jpg" width="80%" alt="icon name">
+                                    <!--NO BANCO DE DADOS, CADA PRODUTO TEM QUE TER UMA IMAGEM
+                                    OBS: ESSA É ILUSTRATIVA-->
+                          </div>
+                        </a>
+                        </td>
+                        
+                              <div>
+                              <td scope="col" class="tamanho-25">  <a href="carrinho.html">
+                                    <b style="margin-bottom: 0%;" class="font2 font-c-b"><span id="ProdName">Nome do Produto</span></b>
+                                                <p class="font-c-bc"><span id="DistriName">Distribuidora</span></p>
+                                                <p><span class="border badge badge-pill badge-co" id="Frete1">Frete Gratis</span></p>
+                                                <!--Caso o frete não seja gratuito, colocar o valor como ex: <p><b>Frete:</b> R$<span>00,00</span></p> -->
+                                                <p class="font-c-ad"><span id="ProdPreco">Preço em R$00,00</span></p>
+                                         </a> </td>
+                        </div>
+                  
+                          <td scope="col"></td>
+                          <td scope="col" class="tamanho-20">
+                              <a href="carrinho.html">    
+                                    <div class="img">
+                                   <img src="/img telas/coleira img.jpg" width="80%" alt="icon name">
+                                   <!--NO BANCO DE DADOS, CADA PRODUTO TEM QUE TER UMA IMAGEM
+                                   OBS: ESSA É ILUSTRATIVA-->
+                         </div>
+                       </a>
+                       </td>
+                       
+                             <div>
+                             <td scope="col" class="tamanho-25">  <a href="carrinho.html">
+                                   <b style="margin-bottom: 0%;" class="font2 font-c-b"><span id="ProdName">Nome do Produto</span></b>
+                                               <p class="font-c-bc"><span id="DistriName">Distribuidora</span></p>
+                                               <p><span class="border badge badge-pill badge-co" id="Frete1">Frete Gratis</span></p>
+                                               <!--Caso o frete não seja gratuito, colocar o valor como ex: <p><b>Frete:</b> R$<span>00,00</span></p> -->
+                                               <p class="font-c-ad"><span id="ProdPreco">Preço em R$00,00</span></p>
+                                        </a> </td>
+                       </div>
+                            <td></td>
+                        </tr>       
+              </thead>
+              <thead class="form-thead">
+                  <tr>
+                        <td scope="col" class="tamanho-2"></td>
+                        
+                          <td scope="col" class="tamanho-20">
+                               <a href="carrinho.html">    
+                                     <div class="img">
+                                    <img src="/img telas/coleira img.jpg" width="80%" alt="icon name">
+                                    <!--NO BANCO DE DADOS, CADA PRODUTO TEM QUE TER UMA IMAGEM
+                                    OBS: ESSA É ILUSTRATIVA-->
+                          </div>
+                        </a>
+                        </td>
+                        
+                              <div>
+                              <td scope="col" class="tamanho-25">  <a href="carrinho.html">
+                                    <b style="margin-bottom: 0%;" class="font2 font-c-b"><span id="ProdName">Nome do Produto</span></b>
+                                                <p class="font-c-bc"><span id="DistriName">Distribuidora</span></p>
+                                                <p><span class="border badge badge-pill badge-co" id="Frete1">Frete Gratis</span></p>
+                                                <!--Caso o frete não seja gratuito, colocar o valor como ex: <p><b>Frete:</b> R$<span>00,00</span></p> -->
+                                                <p class="font-c-ad"><span id="ProdPreco">Preço em R$00,00</span></p>
+                                         </a> </td>
+                        </div>
+                  
+                          <td scope="col"></td>
+                          <td scope="col" class="tamanho-20">
+                              <a href="carrinho.html">    
+                                    <div class="img">
+                                   <img src="/img telas/coleira img.jpg" width="80%" alt="icon name">
+                                   <!--NO BANCO DE DADOS, CADA PRODUTO TEM QUE TER UMA IMAGEM
+                                   OBS: ESSA É ILUSTRATIVA-->
+                         </div>
+                       </a>
+                       </td>
+                       
+                             <div>
+                             <td scope="col" class="tamanho-25">  <a href="carrinho.html">
+                                   <b style="margin-bottom: 0%;" class="font2 font-c-b"><span id="ProdName">Nome do Produto</span></b>
+                                               <p class="font-c-bc"><span id="DistriName">Distribuidora</span></p>
+                                               <p><span class="border badge badge-pill badge-co" id="Frete1">Frete Gratis</span></p>
+                                               <!--Caso o frete não seja gratuito, colocar o valor como ex: <p><b>Frete:</b> R$<span>00,00</span></p> -->
+                                               <p class="font-c-ad"><span id="ProdPreco">Preço em R$00,00</span></p>
+                                        </a> </td>
+                       </div>
+                            <td></td>
+                        </tr>       
+              </thead>
+             <!--<thead class="form-thead" id="TabelaOculta">
+                  <tr>
+                        <td scope="col" class="tamanho-2"></td>
+                          <td scope="col" class="tamanho-20">
+                                <div class="img">
+                              <img src="/open-iconic/svg/icon-name.svg" alt="icon name">
+                          </div></td>
+                          <div>
+                          <td scope="col" class="tamanho-25"> <p style="margin-bottom: 0%;">hjshlds</p>
+                              <p>sfsafas</p>
+                              <p>fsfa</p>
+                              <p>fasfd</p>
+                        </td>
+                        </div>
+                          <td scope="col"></td>
+                          <td scope="col" class="tamanho-20">
+                          <div class="img">
+                              <img src="/open-iconic/svg/icon-name.svg" alt="icon name">
+                          </div>
+                        </td>
+                          <div>
+                              <td scope="col" class="tamanho-25"> <p style="margin-bottom: 0%;">hjshlds</p>
+                                  <p>sfsafas</p>
+                                  <p>fsfa</p>
+                                  <p>fasfd</p>
+                            </td>
+                            </div>
+                            <td></td>
+                        </tr>     
+              </thead>--> 
+                  <tfoot class="form-thead">
+                        <tr><td colspan="8" style="padding-left: 90%;"><a href="" onclick="Mostrar()" >Ver Mais</a></td></tr>
+                     </tfoot>
+              </table>
+              <br>
+            </div>
+    </body>
+</html>

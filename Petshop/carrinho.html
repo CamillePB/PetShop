@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <title>
+    Seu Carrinho
+</title>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/Petshop/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <style>
+            body {
+             background-color: rgb(255, 255, 239);
+         }
+         </style>
+</head>
+<body>
+      <nav class="navbar nav-brown">
+            <div class="container" style="width: 100%; margin-left: 0%">
+              <div class="row">
+             <div class="col-sm-4">
+              <form class="form-inline margin-b" style="margin-left: 0%;">
+                 <div>
+                   <i><img src="/img telas/search icon.png" alt="Pesquisa"></i>
+                </div>
+        
+              <div>
+               <input class="form-control" type="search" aria-label="Pesquisar" style="height: 30px; border-radius: 12px; width: 100%;">
+            </div>
+          </form> 
+        </div>
+            
+            <div class="col-sm-6" style="margin-left: 0%;">
+             
+              <a href="index.html" style="margin-left: 90%;"><img class="margin-10" width="60%" src="/img telas/Titulo.png" alt="Logo"></a>
+            </div>
+        
+            <div class="col-sm-2">
+              <div>
+            <div class="container" style="width: 100%; margin-left: 450%; margin-right: 0%;">
+                  <div class="row">
+                  <div class="col-sm-6"> 
+                        <a style="margin-left: 910%;" href="login.html"><img src="/img telas/person icon.png" alt="Login"></a>
+             </div>
+        
+                  <div class="col-sm-6">
+                    
+                        <a class="border-left border-1" style="margin-left: 850%; padding: 7px; padding-top: 0px;" href="carrinho.html"><img src="/img telas/shop icon.png" alt="Carrinho"></a>
+                 </div>
+                </div>
+                 
+            </div>
+          </div>
+          </div>
+        </div> 
+        </div>
+        
+            </div>
+        </nav>
+<h1 class="font-c-b" style="margin: 5% 0 0 47%;">Carrinho</h1>
+<!--Pode mudar a margem desse titulo se quiser-->
+<div class="container" style="margin: 0 0 0 8%; width: 100%">
+      <div class="row">
+<div class="col-sm-9">
+            <table class="form-table">
+    <thead class="border-bottom" style=" background-color:rgb(255, 255, 239);">
+        <tr>
+        
+          <th></th>
+            <th><p style="margin: 0 0 0 10%; padding-left: 4px;"> Produto</p></th>
+          <th><p style="margin: 0 0 0 30%; width: 26%; padding-left: 4px">Detalhes</p> </th>
+          
+        </tr>
+      </thead> <!--A cada produto adicionado no carrinho, é adicionado mais um thead-->
+      <br>
+    <thead class="form-thead">
+            <tr class="border-bottom threme ">
+              
+              <td scope="col" style="width: 5%;">
+                        <div class="img">    
+                      <img src="/img telas/coleira img.jpg" width="90%">
+                  </div>
+            </td>
+                  <div>  
+                <td scope="col" class="tamanho-15"><b style="font-size: 17px;"><a href="produto.html"> <span class="font-c-b"  id="ProdName">Nome do Produto</span></a></b>
+            <p style="margin: 10% 0 0 0">Quantidade:</p>
+            <input id="quantidade" type="number" min="0" style="width: 20%; display: unset;">
+ 
+                 </td> 
+                  <!--se o minimo for 0, mostrar um messagebox insinuando a opão de remoção do produto-->
+
+                <td scope="col" class="tamanho-10 border-left"> 
+            </div>
+            <br>
+            <div class="container">
+                  <div class="row"> 
+                  <div class="col-sm-6">
+                  <p style="margin: 0 0 0 0px;">Frete:</p>
+                   <b><p style="margin-bottom: 0%;"> R$<span id="Frete">00,00</span></p></b>
+                   <!--se o frete for gratis, então a taxa é R$00,00-->
+              </div>
+            
+            <div class="col-sm-6">
+            <p style="margin-bottom: 0%;">Quantia:</p> 
+            <b><p style="margin: 0 0 0 15px;"><span>qtd</span></p></b>
+           <!--Chamar a quantidade escolhida a partir do input numeral-->
+      </div>
+      </div>
+      </div>
+                     <br>
+                    <!-- <p style="margin: 0 0 0 50px;">12x Sem Juros</p>-->
+                    <p class="border-top" style="margin: 0 0 15px 15px; width: 80%; padding-top: 3%;">Preço: <b>R$<span>00,00</span></b></p>
+                        <!--A partir da quantidade de escolhida, calcular o preço-->
+                        <div>
+                                           
+                </td>
+                 </tr>
+                
+                 </thead>
+                       
+                 </table>
+            </div>
+            
+  <div class="col-sm-3 back-grey border rounded border-secondary" style="margin: 3% 0 0 0% ; width: 100%; height: 50%;">
+                       
+                      <b><p class="font" style="margin: 2% 0 0 34%;">Pedido</p></b> 
+                <br>
+             
+                   <b> <p style="margin: 0 0 0 10px;">Produtos:</p> </b>
+
+              <ul class="font-italic border-bottom border-secondary">
+                    <li id="prod">Nome do Produto</li>
+                  </ul>
+                  <!--Listar todos os produtos selecionados no carrinho-->
+
+              <b style="margin: 50px 0 0 10px;">Valor Total:</b>
+                    <b><p style="margin: 0 0 0 10px;" class="font-c font">R$<span>00,00</span></p></b>
+                    <!--Valor de Todos os produtos escolhidos -->
+                    
+<a href="">
+  <button type="submit" class="btn botao-ca" style="background-color:rgb(95, 72, 66); color: rgb(253, 253, 234); padding-top: 1px;">
+  Comprar</button>
+  <!--Ao clicar no botão comprar, mostrar um messsagebox, dizendo que a compra foi feita-->
+</a>
+                 
+                  </div>
+            </div>
+               
+                  
+            </div>
+      </div>
+                 </body>
+</html>
